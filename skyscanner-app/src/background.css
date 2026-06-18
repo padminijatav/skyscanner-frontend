@@ -1,0 +1,36 @@
+.travel-page {
+  min-height: 100svh;
+  background: #f5f5f5;
+  position: relative;
+}
+body {
+  margin: 0;
+  padding: 0;
+  /* 1. Point to your local background image file path */
+  background-image: url('sea.webp');
+  
+  /* 2. Lock it in place so the page content scrolls over it smoothly */
+  background-attachment: fixed;
+  
+  /* 3. Scale and center it perfectly across all screen sizes */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* 4. Provide a backup fallback background color */
+  background-color: #f5f7fa; 
+}
+.search-container,
+.results-container {
+  /* Change background color from solid white to transparent white */
+  background: rgba(255, 255, 255, 0.85); 
+  
+  /* This native property blurs the ocean behind the white panels */
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
+  
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+}
